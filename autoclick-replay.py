@@ -1,6 +1,6 @@
 import pyautogui,time
 
-x = 1032
+x = 1030
 y = 620
 
 x2 = 1302

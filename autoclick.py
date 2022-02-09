@@ -31,28 +31,28 @@ while True:
        
     if s.getpixel((x2, y2)) != colorOff and (s.getpixel((x, y)) == colorUp or s.getpixel((x, y)) == colorDown):
         if  s.getpixel((x, y)) == colorUp and up == True:
-            time.sleep(60)            
+            time.sleep(300)            
         elif  s.getpixel((x, y)) == colorUp and down == True:    
             pyautogui.click(x5, y5)
             up = True
             down = False
-            time.sleep(60)
+            time.sleep(300)
         elif  s.getpixel((x, y)) == colorDown and down == True:
-            time.sleep(60)                
+            time.sleep(300)                
         elif  s.getpixel((x, y)) == colorDown and up == True:    
             pyautogui.click(x5, y5)
             down = True
             up = False
-            time.sleep(60)
+            time.sleep(300)
             
     elif s.getpixel((x, y)) == colorDown:
          pyautogui.click(x4, y4)
          down = True
-         time.sleep(60)
+         time.sleep(300)
 
          
     elif s.getpixel((x, y)) == colorUp:
         pyautogui.click(x3, y3)
         up = True
-        time.sleep(60)
+        time.sleep(300)
     
